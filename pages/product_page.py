@@ -14,7 +14,7 @@ class ProductPage(BasePage):
     def product_added_to_cart(self):
         product_name = self.browser.find_element(*ProductPageLocators.product_name).text
         message_text = self.browser.find_element(*ProductPageLocators.message).text
-        assert product_name in message_text, 'Product name is wrong'
+        assert f'{product_name} has been added to your basket.' in message_text, 'message incorrect'
 
     def prise_added_to_basket(self):
         product_prise = self.browser.find_element(*ProductPageLocators.product_prise).text
