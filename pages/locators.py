@@ -16,4 +16,5 @@ class ProductPageLocators:
     Product_Url = "http://selenium1py.pythonanywhere.com/en-gb/catalogue/the-shellcoders-handbook_209/?promo=newYear"
     product_prise = (By.CLASS_NAME, 'price_color')
     message = (By.ID, 'messages')
+    success_message = (By.XPATH, '//*[@id="messages"]/div[1]')
     product_name = (By.XPATH, '/html/body/div[2]/div/div[2]/div[2]/article/div[1]/div[2]/h1')
